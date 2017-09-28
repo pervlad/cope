@@ -1,0 +1,732 @@
+{
+	"variables": [],
+	"info": {
+		"name": "cope-intis",
+		"_postman_id": "7e12a48f-5201-78a8-d776-0047a3dc208e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "JSON DOC GET ",
+			"request": {
+				"url": "http://localhost:5000/api/docs/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRob3JpemF0aW9uIiwiZXhwIjoxNTA2NTgxMjYzLCJ1c2VyX2lkIjoxfQ.7lgu4FAZ4AyNQnSCndCwFVdzAeZtcNoFUloq0AT52lE",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/login/?email=pervlad@gmail.com&password=123",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/login?email=admin@cope.com&password=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "admin@cope.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/user/",
+			"request": {
+				"url": "http://localhost:5000/api/user/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNTIyMTQsInVzZXJfaWQiOjF9.i_obTZklxZx9TLbgF_SdC74NWH3laPS8xYCfMekfUEk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/user/ existing",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/user/?role=manager&email=manager2@cope.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "role",
+							"value": "manager",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "manager2@cope.com",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNTIyMTQsInVzZXJfaWQiOjF9.i_obTZklxZx9TLbgF_SdC74NWH3laPS8xYCfMekfUEk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/user/ NEW user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/user/?role=user&email=pervlad@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "role",
+							"value": "user",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "pervlad@gmail.com",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNTIyMTQsInVzZXJfaWQiOjF9.i_obTZklxZx9TLbgF_SdC74NWH3laPS8xYCfMekfUEk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN http://localhost:5000/api/login/ USER1",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/login/?email=reguser8@user.net&password=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login",
+						""
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "reguser8@user.net",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/user/ NEW user by user1 unauthorized ",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/user/?role=user&email=user@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "role",
+							"value": "user",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "user@gmail.com",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNjExNTksInVzZXJfaWQiOjd9.aNUwCm1tNHK869SOcyTmWgFaxdk8GKrIj-GJou7Z3JI",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "NEW manager http://localhost:5000/api/user/ ",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/user/?role=manager&email=manager@copeintis.net",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "role",
+							"value": "manager",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "manager@copeintis.net",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNTIyMTQsInVzZXJfaWQiOjF9.i_obTZklxZx9TLbgF_SdC74NWH3laPS8xYCfMekfUEk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "INVITE MANAGER  http://localhost:5000/api/user/ NEW user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/invite/?user_id=12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"invite",
+						""
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "12",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNTIyMTQsInVzZXJfaWQiOjF9.i_obTZklxZx9TLbgF_SdC74NWH3laPS8xYCfMekfUEk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET EMAIL QUEUE",
+			"request": {
+				"url": "localhost:5000/api/debug/emails",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNTIyMTQsInVzZXJfaWQiOjF9.i_obTZklxZx9TLbgF_SdC74NWH3laPS8xYCfMekfUEk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET INVITED MANAGER http://localhost:5000/api/user/invited?",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/user/invited?invitation_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpbnZpdGF0aW9uIiwiZXhwIjoxNTA2NTkyNjE3LCJ1c2VyX2lkIjo0fQ.ckHvydAvHqzANFnRo9vgFKDilfVA21AsvyUDmL3LUyQ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						"invited"
+					],
+					"query": [
+						{
+							"key": "invitation_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpbnZpdGF0aW9uIiwiZXhwIjoxNTA2NTkyNjE3LCJ1c2VyX2lkIjo0fQ.ckHvydAvHqzANFnRo9vgFKDilfVA21AsvyUDmL3LUyQ",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "REGISTER manager regact?",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/regact/?password=123&invitation_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpbnZpdGF0aW9uIiwiZXhwIjoxNTA2NTg4MDcxLCJ1c2VyX2lkIjoxMn0.vXN2jwPZpG0mAinu5ZBuZwhkLMLq4HFHG1DxupGaS7Q",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"regact",
+						""
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "123",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "invitation_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpbnZpdGF0aW9uIiwiZXhwIjoxNTA2NTg4MDcxLCJ1c2VyX2lkIjoxMn0.vXN2jwPZpG0mAinu5ZBuZwhkLMLq4HFHG1DxupGaS7Q",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "REGISTER USER http://localhost:5000/api/register/",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/register/?email=reguser2@user.net&password=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"register",
+						""
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "reguser2@user.net",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET EMAIL QUEUE copy",
+			"request": {
+				"url": "localhost:5000/api/debug/emails",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNTIyMTQsInVzZXJfaWQiOjF9.i_obTZklxZx9TLbgF_SdC74NWH3laPS8xYCfMekfUEk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ACTIVATE USER http://localhost:5000/api/activate",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/activate/?activation_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhY3RpdmF0aW9uIiwiZXhwIjoxNTA2NTk0NzY5LCJ1c2VyX2lkIjo1fQ.oBQzNN5jeJQnlQhuJ6NSqfW6XxrRDl4BELVK5WFwZ2w",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"activate",
+						""
+					],
+					"query": [
+						{
+							"key": "activation_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhY3RpdmF0aW9uIiwiZXhwIjoxNTA2NTk0NzY5LCJ1c2VyX2lkIjo1fQ.oBQzNN5jeJQnlQhuJ6NSqfW6XxrRDl4BELVK5WFwZ2w",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET USER http://localhost:5000/api/user",
+			"request": {
+				"url": "http://localhost:5000/api/user/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRob3JpemF0aW9uIiwiZXhwIjoxNTA2NTQ4NzkxLCJ1c2VyX2lkIjozfQ.LMGk8UEtsU5W35iohTynuGgB0VQkm5dBWuJH8PbMMGM",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET USER by ADMIN http://localhost:5000/api/user",
+			"request": {
+				"url": "http://localhost:5000/api/user/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNTIyMTQsInVzZXJfaWQiOjF9.i_obTZklxZx9TLbgF_SdC74NWH3laPS8xYCfMekfUEk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET 1 USER by ADMIN http://localhost:5000/api/user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/user/?user_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNTIyMTQsInVzZXJfaWQiOjF9.i_obTZklxZx9TLbgF_SdC74NWH3laPS8xYCfMekfUEk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET 1 USER by USER http://localhost:5000/api/user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/user/?user_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNTIyMTQsInVzZXJfaWQiOjF9.i_obTZklxZx9TLbgF_SdC74NWH3laPS8xYCfMekfUEk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET 1 USER by USER unouthorized http://localhost:5000/api/user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/user/?user_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRob3JpemF0aW9uIiwiZXhwIjoxNTA2NTExOTEzLCJ1c2VyX2lkIjo3fQ.elK-tLyLy68-Xfr0s1V6a4kay5kqjNL2OsKXX_dQtpI",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET 1 USER by USER alowed http://localhost:5000/api/user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/user/?user_id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNTIyMTQsInVzZXJfaWQiOjF9.i_obTZklxZx9TLbgF_SdC74NWH3laPS8xYCfMekfUEk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET 1 USER by USER alowed http://localhost:5000/api/user copy",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/api/user/?user_id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDYzNTIyMTQsInVzZXJfaWQiOjF9.i_obTZklxZx9TLbgF_SdC74NWH3laPS8xYCfMekfUEk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
